@@ -28,13 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnEjerUno = new System.Windows.Forms.Button();
+            this.btnEjerDos = new System.Windows.Forms.Button();
+            this.btnEjerTres = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnEjerUno
+            // 
+            this.btnEjerUno.Location = new System.Drawing.Point(43, 92);
+            this.btnEjerUno.Name = "btnEjerUno";
+            this.btnEjerUno.Size = new System.Drawing.Size(109, 42);
+            this.btnEjerUno.TabIndex = 0;
+            this.btnEjerUno.Text = "EJERCICIO 1";
+            this.btnEjerUno.UseVisualStyleBackColor = true;
+            // 
+            // btnEjerDos
+            // 
+            this.btnEjerDos.Location = new System.Drawing.Point(242, 92);
+            this.btnEjerDos.Name = "btnEjerDos";
+            this.btnEjerDos.Size = new System.Drawing.Size(111, 42);
+            this.btnEjerDos.TabIndex = 1;
+            this.btnEjerDos.Text = "EJERCICIO 2";
+            this.btnEjerDos.UseVisualStyleBackColor = true;
+            // 
+            // btnEjerTres
+            // 
+            this.btnEjerTres.Location = new System.Drawing.Point(444, 92);
+            this.btnEjerTres.Name = "btnEjerTres";
+            this.btnEjerTres.Size = new System.Drawing.Size(104, 42);
+            this.btnEjerTres.TabIndex = 2;
+            this.btnEjerTres.Text = "EJERCICIO 3\r\n";
+            this.btnEjerTres.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnEjerTres);
+            this.Controls.Add(this.btnEjerDos);
+            this.Controls.Add(this.btnEjerUno);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Form1";
+            this.Text = "Formulario Principal";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEjerUno;
+        private System.Windows.Forms.Button btnEjerDos;
+        private System.Windows.Forms.Button btnEjerTres;
     }
 }
 
