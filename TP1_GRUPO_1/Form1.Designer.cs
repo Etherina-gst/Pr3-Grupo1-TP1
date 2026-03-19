@@ -31,7 +31,7 @@
             this.btnEjerUno = new System.Windows.Forms.Button();
             this.btnEjerDos = new System.Windows.Forms.Button();
             this.btnEjerTres = new System.Windows.Forms.Button();
-            this.Integrantes1 = new System.Windows.Forms.Label();
+            this.Integrantes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEjerUno
@@ -42,6 +42,7 @@
             this.btnEjerUno.TabIndex = 0;
             this.btnEjerUno.Text = "EJERCICIO 1";
             this.btnEjerUno.UseVisualStyleBackColor = true;
+            this.btnEjerUno.Click += new System.EventHandler(this.btnEjerUno_Click);
             // 
             // btnEjerDos
             // 
@@ -51,6 +52,7 @@
             this.btnEjerDos.TabIndex = 1;
             this.btnEjerDos.Text = "EJERCICIO 2";
             this.btnEjerDos.UseVisualStyleBackColor = true;
+            this.btnEjerDos.Click += new System.EventHandler(this.btnEjerDos_Click);
             // 
             // btnEjerTres
             // 
@@ -60,22 +62,24 @@
             this.btnEjerTres.TabIndex = 2;
             this.btnEjerTres.Text = "EJERCICIO 3\r\n";
             this.btnEjerTres.UseVisualStyleBackColor = true;
+            this.btnEjerTres.Click += new System.EventHandler(this.btnEjerTres_Click);
             // 
-            // Integrantes1
+            // Integrantes
             // 
-            this.Integrantes1.Location = new System.Drawing.Point(40, 170);
-            this.Integrantes1.Name = "Integrantes1";
-            this.Integrantes1.Size = new System.Drawing.Size(100, 23);
-            this.Integrantes1.TabIndex = 3;
-            this.Integrantes1.Text = "Integrantes:";
-            this.Integrantes1.Click += new System.EventHandler(this.label1_Click);
+            this.Integrantes.Location = new System.Drawing.Point(40, 171);
+            this.Integrantes.Name = "Integrantes";
+            this.Integrantes.Size = new System.Drawing.Size(168, 115);
+            this.Integrantes.TabIndex = 3;
+            this.Integrantes.Text = "Integrantes: \r\n\r\n    + Sena Torres Geremias Rafael\r\n    + Vazquez Fabricio\r\n    +" +
+    " Robledo Candela\r\n    + Yucra Israel\r\n    + Picasso Gabriela Belen\r\n    + Moyano" +
+    " Nahuel Juan";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.Integrantes1);
+            this.Controls.Add(this.Integrantes);
             this.Controls.Add(this.btnEjerTres);
             this.Controls.Add(this.btnEjerDos);
             this.Controls.Add(this.btnEjerUno);
@@ -92,7 +96,7 @@
         private System.Windows.Forms.Button btnEjerUno;
         private System.Windows.Forms.Button btnEjerDos;
         private System.Windows.Forms.Button btnEjerTres;
-        private System.Windows.Forms.Label Integrantes1;
+        private System.Windows.Forms.Label Integrantes;
     }
 }
 
