@@ -24,11 +24,24 @@ namespace TP1_GRUPO_1
             formulario1.Show();
         }
 
+        private bool verificarRepetidos(String nombreIngresado)
+        {
+            foreach(String nombre in lstNombresIngresados.Items)
+                if (nombre.ToLower() == nombreIngresado.ToLower())
+                    return false;
+            return true;
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text.Trim() != "")
+            if (txtNombre.Text.Trim() != "" && verificarRepetidos(txtNombre.Text.Trim()))
             {
                 lstNombresIngresados.Items.Add(txtNombre.Text.Trim());
+                txtNombre.Text = "";
+            }
+            else if (!verificarRepetidos(txtNombre.Text.Trim()))
+            {
+                MessageBox.Show("Debe ingresar un nombre nuevo para agregarlo a la lista");
                 txtNombre.Text = "";
             }
             else
