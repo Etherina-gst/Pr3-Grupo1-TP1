@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP1_GRUPO_1
 {
-    public partial class Form1 : Form
+    public partial class Formulario1 : Form
     {
-        public Form1()
+        public Formulario1()
         {
             InitializeComponent();
         }
@@ -24,7 +24,9 @@ namespace TP1_GRUPO_1
 
         private void btnEjerUno_Click(object sender, EventArgs e)
         {
-
+            Formulario2 formulario2 = new Formulario2(this);
+            formulario2.Show();
+            this.Hide();
         }
 
         private void btnEjerDos_Click(object sender, EventArgs e)

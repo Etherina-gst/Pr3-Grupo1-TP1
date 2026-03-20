@@ -1,6 +1,6 @@
 ﻿namespace TP1_GRUPO_1
 {
-    partial class Form1
+    partial class Formulario1
     {
         /// <summary>
         /// Required designer variable.
@@ -74,7 +74,7 @@
     " Robledo Candela\r\n    + Yucra Israel\r\n    + Picasso Gabriela Belen\r\n    + Moyano" +
     " Nahuel Juan";
             // 
-            // Form1
+            // Formulario1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,7 +84,7 @@
             this.Controls.Add(this.btnEjerDos);
             this.Controls.Add(this.btnEjerUno);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Name = "Formulario1";
             this.Text = "Formulario Principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
