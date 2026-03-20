@@ -53,10 +53,16 @@ namespace TP1_GRUPO_1
 
         private void btnPasarUnNombre_Click(object sender, EventArgs e)
         {
+            if (lstNombresIngresados.SelectedIndex != -1)
+            {
                 string item = lstNombresIngresados.SelectedItem.ToString();
                 lstNombresGuardados.Items.Add(item);
                 lstNombresIngresados.Items.Remove(item);
-            
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un ítem de la lista");
+            }
         }
     }
 }
