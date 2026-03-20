@@ -26,7 +26,17 @@ namespace TP1_GRUPO_1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            lstNombresIngresados.Items.Add(txtNombre.Text);
+            if (txtNombre.Text.Trim() != "")
+            {
+                lstNombresIngresados.Items.Add(txtNombre.Text.Trim());
+                txtNombre.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un nombre para agregarlo a la lista");
+                txtNombre.Text = "";
+            }
         }
+
     }
 }

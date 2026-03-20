@@ -33,6 +33,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lstNombresIngresados = new System.Windows.Forms.ListBox();
+            this.btnPasarUnNombre = new System.Windows.Forms.Button();
+            this.btnPasarTodoslosNombres = new System.Windows.Forms.Button();
+            this.lstNombresGuardados = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblNombres
@@ -54,14 +57,14 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(217, 23);
+            this.txtNombre.Location = new System.Drawing.Point(250, 25);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(303, 20);
             this.txtNombre.TabIndex = 1;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(535, 21);
+            this.btnAgregar.Location = new System.Drawing.Point(593, 25);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(95, 23);
             this.btnAgregar.TabIndex = 2;
@@ -77,11 +80,40 @@
             this.lstNombresIngresados.Size = new System.Drawing.Size(223, 199);
             this.lstNombresIngresados.TabIndex = 3;
             // 
+            // btnPasarUnNombre
+            // 
+            this.btnPasarUnNombre.Location = new System.Drawing.Point(368, 137);
+            this.btnPasarUnNombre.Name = "btnPasarUnNombre";
+            this.btnPasarUnNombre.Size = new System.Drawing.Size(75, 23);
+            this.btnPasarUnNombre.TabIndex = 4;
+            this.btnPasarUnNombre.Text = ">";
+            this.btnPasarUnNombre.UseVisualStyleBackColor = true;
+            // 
+            // btnPasarTodoslosNombres
+            // 
+            this.btnPasarTodoslosNombres.Location = new System.Drawing.Point(368, 185);
+            this.btnPasarTodoslosNombres.Name = "btnPasarTodoslosNombres";
+            this.btnPasarTodoslosNombres.Size = new System.Drawing.Size(75, 23);
+            this.btnPasarTodoslosNombres.TabIndex = 5;
+            this.btnPasarTodoslosNombres.Text = ">>";
+            this.btnPasarTodoslosNombres.UseVisualStyleBackColor = true;
+            // 
+            // lstNombresGuardados
+            // 
+            this.lstNombresGuardados.FormattingEnabled = true;
+            this.lstNombresGuardados.Location = new System.Drawing.Point(508, 78);
+            this.lstNombresGuardados.Name = "lstNombresGuardados";
+            this.lstNombresGuardados.Size = new System.Drawing.Size(223, 199);
+            this.lstNombresGuardados.TabIndex = 6;
+            // 
             // Formulario2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstNombresGuardados);
+            this.Controls.Add(this.btnPasarTodoslosNombres);
+            this.Controls.Add(this.btnPasarUnNombre);
             this.Controls.Add(this.lstNombresIngresados);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombre);
@@ -90,7 +122,6 @@
             this.Name = "Formulario2";
             this.Text = "Nombres";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Formulario2_FormClosed);
-            //this.Load += new System.EventHandler(this.Formulario2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +134,8 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ListBox lstNombresIngresados;
+        private System.Windows.Forms.Button btnPasarUnNombre;
+        private System.Windows.Forms.Button btnPasarTodoslosNombres;
+        private System.Windows.Forms.ListBox lstNombresGuardados;
     }
 }
