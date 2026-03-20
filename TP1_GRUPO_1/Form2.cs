@@ -63,6 +63,17 @@ namespace TP1_GRUPO_1
             {
                 MessageBox.Show("Debe seleccionar un ítem de la lista");
             }
+        
+        }
+
+        private void btnPasarTodoslosNombres_Click(object sender, EventArgs e)
+        {
+            foreach (string nombre in lstNombresIngresados.Items)
+            {
+                lstNombresGuardados.Items.Add(nombre);
+            }
+
+            lstNombresIngresados.Items.Clear();
         }
     }
 }

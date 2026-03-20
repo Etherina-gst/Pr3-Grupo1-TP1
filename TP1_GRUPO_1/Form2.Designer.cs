@@ -98,6 +98,7 @@
             this.btnPasarTodoslosNombres.TabIndex = 5;
             this.btnPasarTodoslosNombres.Text = ">>";
             this.btnPasarTodoslosNombres.UseVisualStyleBackColor = true;
+            this.btnPasarTodoslosNombres.Click += new System.EventHandler(this.btnPasarTodoslosNombres_Click);
             // 
             // lstNombresGuardados
             // 
