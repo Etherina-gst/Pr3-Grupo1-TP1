@@ -88,6 +88,7 @@
             this.btnPasarUnNombre.TabIndex = 4;
             this.btnPasarUnNombre.Text = ">";
             this.btnPasarUnNombre.UseVisualStyleBackColor = true;
+            this.btnPasarUnNombre.Click += new System.EventHandler(this.btnPasarUnNombre_Click);
             // 
             // btnPasarTodoslosNombres
             // 
