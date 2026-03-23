@@ -37,5 +37,13 @@ namespace TP1_GRUPO_1
             txtApellido.Clear();
 
         }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if(lsbElementos.SelectedIndex != -1)
+            {
+                lsbElementos.Items.Remove(lsbElementos.SelectedItem);
+            }
+        }
     }
 }

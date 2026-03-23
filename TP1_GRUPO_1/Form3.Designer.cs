@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.gbDatos = new System.Windows.Forms.GroupBox();
-            this.gbElementos = new System.Windows.Forms.GroupBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.lsbElementos = new System.Windows.Forms.ListBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.gbElementos = new System.Windows.Forms.GroupBox();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.lsbElementos = new System.Windows.Forms.ListBox();
             this.gbDatos.SuspendLayout();
             this.gbElementos.SuspendLayout();
             this.SuspendLayout();
@@ -55,51 +55,6 @@
             this.gbDatos.TabStop = false;
             this.gbDatos.Text = "Ingreso de Datos";
             // 
-            // gbElementos
-            // 
-            this.gbElementos.Controls.Add(this.btnBorrar);
-            this.gbElementos.Controls.Add(this.lsbElementos);
-            this.gbElementos.Location = new System.Drawing.Point(301, 25);
-            this.gbElementos.Name = "gbElementos";
-            this.gbElementos.Size = new System.Drawing.Size(272, 405);
-            this.gbElementos.TabIndex = 1;
-            this.gbElementos.TabStop = false;
-            this.gbElementos.Text = "Elementos";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(17, 132);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 18);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(17, 162);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(72, 18);
-            this.lblApellido.TabIndex = 1;
-            this.lblApellido.Text = "Apellido:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(96, 130);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(160, 20);
-            this.txtNombre.TabIndex = 2;
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(95, 160);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(160, 20);
-            this.txtApellido.TabIndex = 3;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,13 +66,50 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // lsbElementos
+            // txtApellido
             // 
-            this.lsbElementos.FormattingEnabled = true;
-            this.lsbElementos.Location = new System.Drawing.Point(23, 19);
-            this.lsbElementos.Name = "lsbElementos";
-            this.lsbElementos.Size = new System.Drawing.Size(228, 329);
-            this.lsbElementos.TabIndex = 0;
+            this.txtApellido.Location = new System.Drawing.Point(95, 160);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(160, 20);
+            this.txtApellido.TabIndex = 3;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(96, 130);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(160, 20);
+            this.txtNombre.TabIndex = 2;
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(17, 162);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(72, 18);
+            this.lblApellido.TabIndex = 1;
+            this.lblApellido.Text = "Apellido:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(17, 132);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(73, 18);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // gbElementos
+            // 
+            this.gbElementos.Controls.Add(this.btnBorrar);
+            this.gbElementos.Controls.Add(this.lsbElementos);
+            this.gbElementos.Location = new System.Drawing.Point(301, 25);
+            this.gbElementos.Name = "gbElementos";
+            this.gbElementos.Size = new System.Drawing.Size(272, 405);
+            this.gbElementos.TabIndex = 1;
+            this.gbElementos.TabStop = false;
+            this.gbElementos.Text = "Elementos";
             // 
             // btnBorrar
             // 
@@ -128,6 +120,15 @@
             this.btnBorrar.TabIndex = 5;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // lsbElementos
+            // 
+            this.lsbElementos.FormattingEnabled = true;
+            this.lsbElementos.Location = new System.Drawing.Point(23, 19);
+            this.lsbElementos.Name = "lsbElementos";
+            this.lsbElementos.Size = new System.Drawing.Size(228, 329);
+            this.lsbElementos.TabIndex = 0;
             // 
             // Formulario3
             // 
