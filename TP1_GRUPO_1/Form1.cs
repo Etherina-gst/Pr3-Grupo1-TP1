@@ -31,12 +31,14 @@ namespace TP1_GRUPO_1
 
         private void btnEjerDos_Click(object sender, EventArgs e)
         {
-
+            Formulario3 formulario3 = new Formulario3(this);
+            formulario3.Show();
+            this.Hide();
         }
 
         private void btnEjerTres_Click(object sender, EventArgs e)
         {
-
+        
         }
     }
 }
