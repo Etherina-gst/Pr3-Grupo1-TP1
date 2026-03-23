@@ -44,6 +44,10 @@ namespace TP1_GRUPO_1
             {
                 lsbElementos.Items.Remove(lsbElementos.SelectedItem);
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un nombre a borrar", "Advertencia");
+            }
         }
     }
 }
