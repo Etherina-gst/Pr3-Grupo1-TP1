@@ -29,29 +29,26 @@ namespace TP1_GRUPO_1
             formulario1.Show();
         }
 
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string Nombre = txtNombre.Text.Trim();
-            string Apellido = txtApellido.Text.Trim();
+            string Nombre = txtNombre.Text.Trim() + " " + txtApellido.Text.Trim();
 
-            if (Nombre.Length > 0 && Apellido.Length > 0)
+            if (txtNombre.Text.Trim() != "" && txtApellido.Text.Trim() != ""
+                && !VerificarRepetido(Nombre))
             {
-                string NombreCompleto = Nombre + " " + Apellido;
-
-                if (VerificarRepetido(NombreCompleto))
-                {
-                    return;
-                }
-                lsbElementos.Items.Add(NombreCompleto);
+                lsbElementos.Items.Add(Nombre);
                 txtNombre.Clear();
                 txtApellido.Clear();
             }
+            else if (VerificarRepetido(Nombre))
+            {
+                MessageBox.Show("No se pueden nombres repetidos!", "ATENCION");
+            }
             else
             {
-                MessageBox.Show("Deben completarse ambos campos, tanto el de nombre como el de apellido!!", "ATENCION" );
+                MessageBox.Show("Deben completarse ambos campos, tanto el de nombre como el de apellido!!", "ATENCION");
             }
-            
-
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
@@ -66,19 +63,11 @@ namespace TP1_GRUPO_1
             }
         }
 
-        private bool VerificarRepetido(string NombreCompleto)
+        private bool VerificarRepetido(string Nombre)
         {
-            string Nuevo = NombreCompleto.Trim().ToUpper();
-
             foreach (string Persona in lsbElementos.Items)
-            {
-                if (Persona.ToUpper() == Nuevo)
-                {
+                if (Persona.ToUpper() == Nombre.ToUpper())
                     return true;
-                }
-
-            }
-
             return false;
         }
 
