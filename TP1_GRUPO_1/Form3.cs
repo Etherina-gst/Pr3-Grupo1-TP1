@@ -31,10 +31,18 @@ namespace TP1_GRUPO_1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string Nombre = txtNombre.Text + " " + txtApellido.Text;
-            lsbElementos.Items.Add(Nombre);
-            txtNombre.Clear();
-            txtApellido.Clear();
+            if (txtApellido.Text != "" && txtNombre.Text != "" )
+            {
+                string Nombre = txtNombre.Text + " " + txtApellido.Text;
+                lsbElementos.Items.Add(Nombre);
+                txtNombre.Clear();
+                txtApellido.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Deben completarse ambos campos, tanto el de nombre como el de apellido!!", "ATENCION" );
+            }
+            
 
         }
 
