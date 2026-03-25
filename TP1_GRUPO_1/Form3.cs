@@ -31,10 +31,18 @@ namespace TP1_GRUPO_1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtApellido.Text != "" && txtNombre.Text != "" )
+            string Nombre = txtNombre.Text.Trim();
+            string Apellido = txtApellido.Text.Trim();
+
+            if (Nombre.Length > 0 && Apellido.Length > 0)
             {
-                string Nombre = txtNombre.Text + " " + txtApellido.Text;
-                lsbElementos.Items.Add(Nombre);
+                string NombreCompleto = Nombre + " " + Apellido;
+
+                if (VerificarRepetido(NombreCompleto))
+                {
+                    return;
+                }
+                lsbElementos.Items.Add(NombreCompleto);
                 txtNombre.Clear();
                 txtApellido.Clear();
             }
@@ -57,5 +65,22 @@ namespace TP1_GRUPO_1
                 MessageBox.Show("Debe seleccionar un nombre a borrar", "Advertencia");
             }
         }
+
+        private bool VerificarRepetido(string NombreCompleto)
+        {
+            string Nuevo = NombreCompleto.Trim().ToUpper();
+
+            foreach (string Persona in lsbElementos.Items)
+            {
+                if (Persona.ToUpper() == Nuevo)
+                {
+                    return true;
+                }
+
+            }
+
+            return false;
+        }
+
     }
 }
