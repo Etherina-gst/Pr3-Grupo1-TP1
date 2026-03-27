@@ -38,7 +38,9 @@ namespace TP1_GRUPO_1
 
         private void btnEjerTres_Click(object sender, EventArgs e)
         {
-        
+            Formulario4 formulario4 = new Formulario4(this);
+            formulario4.Show();
+            this.Hide();
         }
     }
 }

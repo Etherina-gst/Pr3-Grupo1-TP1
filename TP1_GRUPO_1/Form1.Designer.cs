@@ -36,9 +36,10 @@
             // 
             // btnEjerUno
             // 
-            this.btnEjerUno.Location = new System.Drawing.Point(43, 92);
+            this.btnEjerUno.Location = new System.Drawing.Point(57, 113);
+            this.btnEjerUno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEjerUno.Name = "btnEjerUno";
-            this.btnEjerUno.Size = new System.Drawing.Size(109, 42);
+            this.btnEjerUno.Size = new System.Drawing.Size(145, 52);
             this.btnEjerUno.TabIndex = 0;
             this.btnEjerUno.Text = "EJERCICIO 1";
             this.btnEjerUno.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // btnEjerDos
             // 
-            this.btnEjerDos.Location = new System.Drawing.Point(242, 92);
+            this.btnEjerDos.Location = new System.Drawing.Point(323, 113);
+            this.btnEjerDos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEjerDos.Name = "btnEjerDos";
-            this.btnEjerDos.Size = new System.Drawing.Size(111, 42);
+            this.btnEjerDos.Size = new System.Drawing.Size(148, 52);
             this.btnEjerDos.TabIndex = 1;
             this.btnEjerDos.Text = "EJERCICIO 2";
             this.btnEjerDos.UseVisualStyleBackColor = true;
@@ -56,9 +58,10 @@
             // 
             // btnEjerTres
             // 
-            this.btnEjerTres.Location = new System.Drawing.Point(444, 92);
+            this.btnEjerTres.Location = new System.Drawing.Point(592, 113);
+            this.btnEjerTres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEjerTres.Name = "btnEjerTres";
-            this.btnEjerTres.Size = new System.Drawing.Size(104, 42);
+            this.btnEjerTres.Size = new System.Drawing.Size(139, 52);
             this.btnEjerTres.TabIndex = 2;
             this.btnEjerTres.Text = "EJERCICIO 3\r\n";
             this.btnEjerTres.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@
             // 
             // Integrantes
             // 
-            this.Integrantes.Location = new System.Drawing.Point(40, 171);
+            this.Integrantes.Location = new System.Drawing.Point(53, 210);
+            this.Integrantes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Integrantes.Name = "Integrantes";
-            this.Integrantes.Size = new System.Drawing.Size(168, 115);
+            this.Integrantes.Size = new System.Drawing.Size(224, 142);
             this.Integrantes.TabIndex = 3;
             this.Integrantes.Text = "Integrantes: \r\n\r\n    + Sena Torres Geremias Rafael\r\n    + Vazquez Fabricio\r\n    +" +
     " Robledo Candela\r\n    + Yucra Israel\r\n    + Picasso Gabriela Belen\r\n    + Moyano" +
@@ -76,15 +80,16 @@
             // 
             // Formulario1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 360);
+            this.ClientSize = new System.Drawing.Size(787, 443);
             this.Controls.Add(this.Integrantes);
             this.Controls.Add(this.btnEjerTres);
             this.Controls.Add(this.btnEjerDos);
             this.Controls.Add(this.btnEjerUno);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Formulario1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario Principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
