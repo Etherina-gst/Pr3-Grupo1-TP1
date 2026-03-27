@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
-            this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.rbMasculino = new System.Windows.Forms.RadioButton();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.rbFemenino = new System.Windows.Forms.RadioButton();
+            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
             this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +49,28 @@
             this.gbSexo.TabStop = false;
             this.gbSexo.Text = "Sexo";
             // 
+            // rbMasculino
+            // 
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.Location = new System.Drawing.Point(14, 58);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(89, 20);
+            this.rbMasculino.TabIndex = 1;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UseVisualStyleBackColor = true;
+            // 
+            // rbFemenino
+            // 
+            this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Checked = true;
+            this.rbFemenino.Location = new System.Drawing.Point(14, 28);
+            this.rbFemenino.Name = "rbFemenino";
+            this.rbFemenino.Size = new System.Drawing.Size(88, 20);
+            this.rbFemenino.TabIndex = 0;
+            this.rbFemenino.TabStop = true;
+            this.rbFemenino.Text = "Femenino";
+            this.rbFemenino.UseVisualStyleBackColor = true;
+            // 
             // gbEstadoCivil
             // 
             this.gbEstadoCivil.Controls.Add(this.rbSoltero);
@@ -60,49 +82,27 @@
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
             // 
-            // rbFemenino
-            // 
-            this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(14, 28);
-            this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(103, 20);
-            this.rbFemenino.TabIndex = 0;
-            this.rbFemenino.TabStop = true;
-            this.rbFemenino.Text = "radioButton1";
-            this.rbFemenino.UseVisualStyleBackColor = true;
-            // 
-            // rbMasculino
-            // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(14, 58);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(103, 20);
-            this.rbMasculino.TabIndex = 1;
-            this.rbMasculino.TabStop = true;
-            this.rbMasculino.Text = "radioButton2";
-            this.rbMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rbCasado
-            // 
-            this.rbCasado.AutoSize = true;
-            this.rbCasado.Location = new System.Drawing.Point(14, 29);
-            this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(103, 20);
-            this.rbCasado.TabIndex = 2;
-            this.rbCasado.TabStop = true;
-            this.rbCasado.Text = "radioButton3";
-            this.rbCasado.UseVisualStyleBackColor = true;
-            // 
             // rbSoltero
             // 
             this.rbSoltero.AutoSize = true;
             this.rbSoltero.Location = new System.Drawing.Point(14, 58);
             this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(103, 20);
+            this.rbSoltero.Size = new System.Drawing.Size(71, 20);
             this.rbSoltero.TabIndex = 3;
-            this.rbSoltero.TabStop = true;
-            this.rbSoltero.Text = "radioButton4";
+            this.rbSoltero.Text = "Soltero";
             this.rbSoltero.UseVisualStyleBackColor = true;
+            // 
+            // rbCasado
+            // 
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Checked = true;
+            this.rbCasado.Location = new System.Drawing.Point(14, 29);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(76, 20);
+            this.rbCasado.TabIndex = 2;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
             // 
             // Formulario4
             // 
