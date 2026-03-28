@@ -28,6 +28,7 @@ namespace TP1_GRUPO_1
         {
             string sexo = "";
             string estadoCivil = "";
+            string oficios = "";
 
             if (rbFemenino.Checked == true)
             {
@@ -38,7 +39,7 @@ namespace TP1_GRUPO_1
                 sexo = "Masculino";
             }
 
-            if(rbCasado.Checked == true)
+            if (rbCasado.Checked == true)
             {
                 estadoCivil = "Casado";
             }
@@ -46,6 +47,13 @@ namespace TP1_GRUPO_1
             {
                 estadoCivil = "Soltero";
             }
+
+
+            foreach (object item in clbOficios.CheckedItems)
+            {
+                oficios = oficios + "\r\n - " + item.ToString();
             }
+
+        }
     }
 }

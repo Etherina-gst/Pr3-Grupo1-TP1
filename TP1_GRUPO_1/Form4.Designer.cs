@@ -35,6 +35,7 @@
             this.rbSoltero = new System.Windows.Forms.RadioButton();
             this.rbCasado = new System.Windows.Forms.RadioButton();
             this.btMostrar = new System.Windows.Forms.Button();
+            this.clbOficios = new System.Windows.Forms.CheckedListBox();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -115,7 +116,7 @@
             // 
             // btMostrar
             // 
-            this.btMostrar.Location = new System.Drawing.Point(113, 190);
+            this.btMostrar.Location = new System.Drawing.Point(111, 213);
             this.btMostrar.Name = "btMostrar";
             this.btMostrar.Size = new System.Drawing.Size(152, 23);
             this.btMostrar.TabIndex = 1;
@@ -123,11 +124,20 @@
             this.btMostrar.UseVisualStyleBackColor = true;
             this.btMostrar.Click += new System.EventHandler(this.btMostrar_Click);
             // 
+            // clbOficios
+            // 
+            this.clbOficios.FormattingEnabled = true;
+            this.clbOficios.Location = new System.Drawing.Point(124, 113);
+            this.clbOficios.Name = "clbOficios";
+            this.clbOficios.Size = new System.Drawing.Size(120, 94);
+            this.clbOficios.TabIndex = 2;
+            // 
             // Formulario4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 366);
+            this.Controls.Add(this.clbOficios);
             this.Controls.Add(this.btMostrar);
             this.Controls.Add(this.gbEstadoCivil);
             this.Controls.Add(this.gbSexo);
@@ -153,5 +163,6 @@
         private System.Windows.Forms.RadioButton rbSoltero;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.Button btMostrar;
+        private System.Windows.Forms.CheckedListBox clbOficios;
     }
 }
