@@ -30,7 +30,7 @@ namespace TP1_GRUPO_1
             string estadoCivil = "";
             string oficios = "";
 
-            if (rbFemenino.Checked == true)
+            if (rbFemenino.Checked)
             {
                 sexo = "Femenino";
             }
@@ -39,7 +39,7 @@ namespace TP1_GRUPO_1
                 sexo = "Masculino";
             }
 
-            if (rbCasado.Checked == true)
+            if (rbCasado.Checked)
             {
                 estadoCivil = "Casado";
             }
@@ -48,11 +48,22 @@ namespace TP1_GRUPO_1
                 estadoCivil = "Soltero";
             }
 
-
-            foreach (object item in clbOficios.CheckedItems)
+            if(clbOficios.CheckedItems.Count >0) 
             {
-                oficios = oficios + "\r\n - " + item.ToString();
+
+                foreach (object item in clbOficios.CheckedItems)
+                {
+                    oficios = oficios + "\r\n - " + item.ToString();
+                }
+
             }
+            else 
+            {
+                MessageBox.Show("Por favor, seleccione al menos un oficio!", "ADVERTENCIA!");
+            }
+
+            
+            
 
         }
     }

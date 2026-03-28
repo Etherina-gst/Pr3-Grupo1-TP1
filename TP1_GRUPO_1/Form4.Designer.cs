@@ -96,9 +96,9 @@
             this.rbSoltero.Location = new System.Drawing.Point(10, 47);
             this.rbSoltero.Margin = new System.Windows.Forms.Padding(2);
             this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(58, 17);
+            this.rbSoltero.Size = new System.Drawing.Size(69, 17);
             this.rbSoltero.TabIndex = 3;
-            this.rbSoltero.Text = "Soltero";
+            this.rbSoltero.Text = "Soltero/a";
             this.rbSoltero.UseVisualStyleBackColor = true;
             // 
             // rbCasado
@@ -108,10 +108,10 @@
             this.rbCasado.Location = new System.Drawing.Point(10, 24);
             this.rbCasado.Margin = new System.Windows.Forms.Padding(2);
             this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(61, 17);
+            this.rbCasado.Size = new System.Drawing.Size(72, 17);
             this.rbCasado.TabIndex = 2;
             this.rbCasado.TabStop = true;
-            this.rbCasado.Text = "Casado";
+            this.rbCasado.Text = "Casado/a";
             this.rbCasado.UseVisualStyleBackColor = true;
             // 
             // btMostrar
