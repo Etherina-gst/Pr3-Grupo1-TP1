@@ -53,13 +53,18 @@ namespace TP1_GRUPO_1
 
                 foreach (object item in clbOficios.CheckedItems)
                 {
-                    oficios = oficios + "\r\n - " + item.ToString();
+                    oficios = oficios + "\r\n " + "-" + item.ToString();
                 }
+
+                lblResultado.Text = "Usted selecciono los siguientes elementos:" + "\r\n" + 
+                    "Sexo: " + sexo + "\r\n" +
+                    "Estado Civil: " + estadoCivil + "\r\n" +
+                    "Oficio: " + oficios; 
 
             }
             else 
             {
-                MessageBox.Show("Por favor, seleccione al menos un oficio!", "ADVERTENCIA!");
+                MessageBox.Show("Por favor, seleccione al menos un oficio!", "ADVERTENCIA!"); 
             }
 
             

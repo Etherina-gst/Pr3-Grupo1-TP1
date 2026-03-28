@@ -36,6 +36,7 @@
             this.rbCasado = new System.Windows.Forms.RadioButton();
             this.btMostrar = new System.Windows.Forms.Button();
             this.clbOficios = new System.Windows.Forms.CheckedListBox();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -120,23 +121,40 @@
             this.btMostrar.Name = "btMostrar";
             this.btMostrar.Size = new System.Drawing.Size(152, 23);
             this.btMostrar.TabIndex = 1;
-            this.btMostrar.Text = "button1";
+            this.btMostrar.Text = "Mostrar lo que se selecciono";
             this.btMostrar.UseVisualStyleBackColor = true;
             this.btMostrar.Click += new System.EventHandler(this.btMostrar_Click);
             // 
             // clbOficios
             // 
             this.clbOficios.FormattingEnabled = true;
+            this.clbOficios.Items.AddRange(new object[] {
+            "Data Entry ",
+            "Operador de PC",
+            "Programador",
+            "Reparador de PC",
+            "Tester"});
             this.clbOficios.Location = new System.Drawing.Point(124, 113);
             this.clbOficios.Name = "clbOficios";
             this.clbOficios.Size = new System.Drawing.Size(120, 94);
             this.clbOficios.TabIndex = 2;
             // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(10, 260);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(360, 80);
+            this.lblResultado.TabIndex = 3;
+            this.lblResultado.Text = "Usted selecciono los siguientes elementos: \r\nSexo: \r\nEstado Civil: \r\nOficio: \r\n";
+            // 
             // Formulario4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 366);
+            this.ClientSize = new System.Drawing.Size(382, 477);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.clbOficios);
             this.Controls.Add(this.btMostrar);
             this.Controls.Add(this.gbEstadoCivil);
@@ -151,6 +169,7 @@
             this.gbEstadoCivil.ResumeLayout(false);
             this.gbEstadoCivil.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -164,5 +183,6 @@
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.Button btMostrar;
         private System.Windows.Forms.CheckedListBox clbOficios;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
