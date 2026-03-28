@@ -23,5 +23,20 @@ namespace TP1_GRUPO_1
         {
             formulario1.Show();
         }
+
+        private void btMostrar_Click(object sender, EventArgs e)
+        {
+            string sexo = "";
+            
+            if (rbFemenino.Checked == true)
+            {
+                sexo = "Femenino";
+            }
+            else
+            {
+                sexo = "Masculino";
+            }
+        }
+
     }
 }
