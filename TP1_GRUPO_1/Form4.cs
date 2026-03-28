@@ -27,7 +27,8 @@ namespace TP1_GRUPO_1
         private void btMostrar_Click(object sender, EventArgs e)
         {
             string sexo = "";
-            
+            string estadoCivil = "";
+
             if (rbFemenino.Checked == true)
             {
                 sexo = "Femenino";
@@ -36,7 +37,15 @@ namespace TP1_GRUPO_1
             {
                 sexo = "Masculino";
             }
-        }
 
+            if(rbCasado.Checked == true)
+            {
+                estadoCivil = "Casado";
+            }
+            else
+            {
+                estadoCivil = "Soltero";
+            }
+            }
     }
 }

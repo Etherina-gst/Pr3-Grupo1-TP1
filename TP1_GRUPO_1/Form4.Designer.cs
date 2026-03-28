@@ -60,13 +60,13 @@
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(73, 17);
             this.rbMasculino.TabIndex = 1;
-            this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
             // 
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Checked = true;
             this.rbFemenino.Location = new System.Drawing.Point(10, 23);
             this.rbFemenino.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemenino.Name = "rbFemenino";
@@ -97,13 +97,13 @@
             this.rbSoltero.Name = "rbSoltero";
             this.rbSoltero.Size = new System.Drawing.Size(58, 17);
             this.rbSoltero.TabIndex = 3;
-            this.rbSoltero.TabStop = true;
             this.rbSoltero.Text = "Soltero";
             this.rbSoltero.UseVisualStyleBackColor = true;
             // 
             // rbCasado
             // 
             this.rbCasado.AutoSize = true;
+            this.rbCasado.Checked = true;
             this.rbCasado.Location = new System.Drawing.Point(10, 24);
             this.rbCasado.Margin = new System.Windows.Forms.Padding(2);
             this.rbCasado.Name = "rbCasado";
