@@ -36,10 +36,11 @@
             // 
             // btnEjerUno
             // 
-            this.btnEjerUno.Location = new System.Drawing.Point(57, 113);
-            this.btnEjerUno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEjerUno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjerUno.Location = new System.Drawing.Point(12, 65);
+            this.btnEjerUno.Margin = new System.Windows.Forms.Padding(4);
             this.btnEjerUno.Name = "btnEjerUno";
-            this.btnEjerUno.Size = new System.Drawing.Size(145, 52);
+            this.btnEjerUno.Size = new System.Drawing.Size(150, 60);
             this.btnEjerUno.TabIndex = 0;
             this.btnEjerUno.Text = "EJERCICIO 1";
             this.btnEjerUno.UseVisualStyleBackColor = true;
@@ -47,10 +48,11 @@
             // 
             // btnEjerDos
             // 
-            this.btnEjerDos.Location = new System.Drawing.Point(323, 113);
-            this.btnEjerDos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEjerDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjerDos.Location = new System.Drawing.Point(214, 65);
+            this.btnEjerDos.Margin = new System.Windows.Forms.Padding(4);
             this.btnEjerDos.Name = "btnEjerDos";
-            this.btnEjerDos.Size = new System.Drawing.Size(148, 52);
+            this.btnEjerDos.Size = new System.Drawing.Size(150, 60);
             this.btnEjerDos.TabIndex = 1;
             this.btnEjerDos.Text = "EJERCICIO 2";
             this.btnEjerDos.UseVisualStyleBackColor = true;
@@ -58,10 +60,11 @@
             // 
             // btnEjerTres
             // 
-            this.btnEjerTres.Location = new System.Drawing.Point(592, 113);
-            this.btnEjerTres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEjerTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjerTres.Location = new System.Drawing.Point(416, 65);
+            this.btnEjerTres.Margin = new System.Windows.Forms.Padding(4);
             this.btnEjerTres.Name = "btnEjerTres";
-            this.btnEjerTres.Size = new System.Drawing.Size(139, 52);
+            this.btnEjerTres.Size = new System.Drawing.Size(150, 60);
             this.btnEjerTres.TabIndex = 2;
             this.btnEjerTres.Text = "EJERCICIO 3\r\n";
             this.btnEjerTres.UseVisualStyleBackColor = true;
@@ -69,20 +72,21 @@
             // 
             // Integrantes
             // 
-            this.Integrantes.Location = new System.Drawing.Point(53, 210);
+            this.Integrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Integrantes.Location = new System.Drawing.Point(12, 182);
             this.Integrantes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Integrantes.Name = "Integrantes";
-            this.Integrantes.Size = new System.Drawing.Size(224, 142);
+            this.Integrantes.Size = new System.Drawing.Size(432, 238);
             this.Integrantes.TabIndex = 3;
-            this.Integrantes.Text = "Integrantes: \r\n\r\n    + Sena Torres Geremias Rafael\r\n    + Vazquez Fabricio\r\n    +" +
-    " Robledo Candela\r\n    + Yucra Israel\r\n    + Picasso Gabriela Belen\r\n    + Moyano" +
-    " Nahuel Juan";
+            this.Integrantes.Text = "Integrantes: \r\n\r\n    -Sena Torres Geremias Rafael\r\n    -Vazquez Fabricio\r\n    -Ro" +
+    "bledo Candela\r\n    -Yucra Israel\r\n    -Picasso Gabriela Belen\r\n    -Moyano Nahue" +
+    "l Juan";
             // 
             // Formulario1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 443);
+            this.ClientSize = new System.Drawing.Size(582, 443);
             this.Controls.Add(this.Integrantes);
             this.Controls.Add(this.btnEjerTres);
             this.Controls.Add(this.btnEjerDos);

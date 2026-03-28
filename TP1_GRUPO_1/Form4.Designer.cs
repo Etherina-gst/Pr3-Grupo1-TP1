@@ -45,11 +45,11 @@
             // 
             this.gbSexo.Controls.Add(this.rbMasculino);
             this.gbSexo.Controls.Add(this.rbFemenino);
-            this.gbSexo.Location = new System.Drawing.Point(9, 10);
-            this.gbSexo.Margin = new System.Windows.Forms.Padding(2);
+            this.gbSexo.Location = new System.Drawing.Point(12, 12);
+            this.gbSexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbSexo.Name = "gbSexo";
-            this.gbSexo.Padding = new System.Windows.Forms.Padding(2);
-            this.gbSexo.Size = new System.Drawing.Size(150, 81);
+            this.gbSexo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbSexo.Size = new System.Drawing.Size(200, 100);
             this.gbSexo.TabIndex = 0;
             this.gbSexo.TabStop = false;
             this.gbSexo.Text = "Sexo";
@@ -57,10 +57,10 @@
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(10, 47);
-            this.rbMasculino.Margin = new System.Windows.Forms.Padding(2);
+            this.rbMasculino.Location = new System.Drawing.Point(13, 58);
+            this.rbMasculino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.Size = new System.Drawing.Size(89, 20);
             this.rbMasculino.TabIndex = 1;
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@
             // 
             this.rbFemenino.AutoSize = true;
             this.rbFemenino.Checked = true;
-            this.rbFemenino.Location = new System.Drawing.Point(10, 23);
-            this.rbFemenino.Margin = new System.Windows.Forms.Padding(2);
+            this.rbFemenino.Location = new System.Drawing.Point(13, 28);
+            this.rbFemenino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
+            this.rbFemenino.Size = new System.Drawing.Size(88, 20);
             this.rbFemenino.TabIndex = 0;
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
@@ -82,11 +82,11 @@
             // 
             this.gbEstadoCivil.Controls.Add(this.rbSoltero);
             this.gbEstadoCivil.Controls.Add(this.rbCasado);
-            this.gbEstadoCivil.Location = new System.Drawing.Point(221, 10);
-            this.gbEstadoCivil.Margin = new System.Windows.Forms.Padding(2);
+            this.gbEstadoCivil.Location = new System.Drawing.Point(296, 12);
+            this.gbEstadoCivil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEstadoCivil.Name = "gbEstadoCivil";
-            this.gbEstadoCivil.Padding = new System.Windows.Forms.Padding(2);
-            this.gbEstadoCivil.Size = new System.Drawing.Size(150, 81);
+            this.gbEstadoCivil.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbEstadoCivil.Size = new System.Drawing.Size(200, 100);
             this.gbEstadoCivil.TabIndex = 0;
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
@@ -94,10 +94,10 @@
             // rbSoltero
             // 
             this.rbSoltero.AutoSize = true;
-            this.rbSoltero.Location = new System.Drawing.Point(10, 47);
-            this.rbSoltero.Margin = new System.Windows.Forms.Padding(2);
+            this.rbSoltero.Location = new System.Drawing.Point(13, 58);
+            this.rbSoltero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(69, 17);
+            this.rbSoltero.Size = new System.Drawing.Size(83, 20);
             this.rbSoltero.TabIndex = 3;
             this.rbSoltero.Text = "Soltero/a";
             this.rbSoltero.UseVisualStyleBackColor = true;
@@ -106,10 +106,10 @@
             // 
             this.rbCasado.AutoSize = true;
             this.rbCasado.Checked = true;
-            this.rbCasado.Location = new System.Drawing.Point(10, 24);
-            this.rbCasado.Margin = new System.Windows.Forms.Padding(2);
+            this.rbCasado.Location = new System.Drawing.Point(13, 28);
+            this.rbCasado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(72, 17);
+            this.rbCasado.Size = new System.Drawing.Size(88, 20);
             this.rbCasado.TabIndex = 2;
             this.rbCasado.TabStop = true;
             this.rbCasado.Text = "Casado/a";
@@ -117,9 +117,10 @@
             // 
             // btMostrar
             // 
-            this.btMostrar.Location = new System.Drawing.Point(111, 213);
+            this.btMostrar.Location = new System.Drawing.Point(148, 262);
+            this.btMostrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btMostrar.Name = "btMostrar";
-            this.btMostrar.Size = new System.Drawing.Size(152, 23);
+            this.btMostrar.Size = new System.Drawing.Size(203, 28);
             this.btMostrar.TabIndex = 1;
             this.btMostrar.Text = "Mostrar lo que se selecciono";
             this.btMostrar.UseVisualStyleBackColor = true;
@@ -127,6 +128,7 @@
             // 
             // clbOficios
             // 
+            this.clbOficios.CheckOnClick = true;
             this.clbOficios.FormattingEnabled = true;
             this.clbOficios.Items.AddRange(new object[] {
             "Data Entry ",
@@ -134,32 +136,34 @@
             "Programador",
             "Reparador de PC",
             "Tester"});
-            this.clbOficios.Location = new System.Drawing.Point(124, 113);
+            this.clbOficios.Location = new System.Drawing.Point(165, 139);
+            this.clbOficios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clbOficios.Name = "clbOficios";
-            this.clbOficios.Size = new System.Drawing.Size(120, 94);
+            this.clbOficios.Size = new System.Drawing.Size(159, 106);
             this.clbOficios.TabIndex = 2;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(10, 260);
+            this.lblResultado.Location = new System.Drawing.Point(13, 300);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(360, 80);
+            this.lblResultado.Size = new System.Drawing.Size(433, 100);
             this.lblResultado.TabIndex = 3;
             this.lblResultado.Text = "Usted selecciono los siguientes elementos: \r\nSexo: \r\nEstado Civil: \r\nOficio: \r\n";
             // 
             // Formulario4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 477);
+            this.ClientSize = new System.Drawing.Size(509, 543);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.clbOficios);
             this.Controls.Add(this.btMostrar);
             this.Controls.Add(this.gbEstadoCivil);
             this.Controls.Add(this.gbSexo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Formulario4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 3";
